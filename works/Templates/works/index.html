@@ -1,0 +1,450 @@
+
+  {% extends 'works/main.html'%}
+
+  {% load static %}
+
+  {% block content %}
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in"><span></span></div>
+        <div class="intro-heading text-uppercase">Prashant Karki</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about">More About Me</a>
+      </div>
+    </div>
+  </header>
+
+   <!-- About Me -->
+   <section class="bg-light page-section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">About Me.</h2>
+          <h3 class="section-subheading text-muted">"Ready To Get Hired."</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="{% static 'img/team/pk.jpg' %}" alt="">
+            <h4>Prashant Karki</h4>
+            <p class="text-muted">Data Science</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://github.com/peak27?tab=repositories">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/prashant.karki27/">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/prashantkarki/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>  
+          </div>
+        </div>
+        <div class="col-lg-8 mx-auto text-center">
+          <b>
+          <p style = "font-family:Lucida Bright,arial,helvetica;">Graduating this Dec 2020 from Minnesota State University, Mankato with Computer Information Technology (CIT) major and Statistics (Minor) with more than a year and a half of experience as Student Web Developer/Analyst at IT Solutions,MNSU.</p>
+          <p style = "font-family:Lucida Bright,arial,helvetica;">I am looking for a career in Data Science/Machine Learning field, and hope to have a challenging opportunity that utilizes the strong skill-sets that I have developed over the years throughout my academic journey, here at MNSU.</p>
+          <p style = "font-family:Lucida Bright,arial,helvetica;">I have strong analytical and statistical skills, also have completed numerous data science projects with hands on experience on Python, R, SAS, MATLAB, SQL (T/PL), Tableau and Power BI.
+            Some major topics of interest - Data Warehousing, Big Data, Cloud Computing and Neural Networks.</p></b>
+            <br>
+            <button type="button" class="btn btn-success"><a href="{% static 'img/Docs/Resume.pdf' %}">My Resume</a></button>
+        </div>
+      </div>
+ <!--       
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="page-section" id="fields">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h3 class="section-heading text-uppercase">Major Fields of Interests</h3>
+          <h6 class="section-subheading text-muted">Have a look at things I love to spend times with.</h6>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <a href="" onclick="return false;">
+          <img src="{% static 'img/icon/DS.png' %}" alt="Test" width="150px" height="150px">
+          <h4 class="service-heading">Data Analytics</h4>
+        </a>
+          <p class="">"I have completed multiple projects on data science that covers the broad range of Data Mining & Statistical Analysis, EDA, Data Cleaning,
+              Data Visualization, Natural Language Processing, Machine Learning and more. "</p>
+        </div>
+
+        <div class="col-sm-4">
+          <a href="" onclick="return false;">
+          <img src="{% static 'img/icon/nlp.jpg' %}" alt="Test" width="150px" height="150px">
+          <h4 class="service-heading">NLP</h4>
+        </a>
+          <p class="">"I have completed multiple projects on NLP including resume filteration system. Performed sentiment analysis on customer reviews and twitter datasets.
+             "</p>
+        </div>
+
+        <div class="col-sm-4">
+          <a href="" onclick="return false;">
+          <img src="{% static 'img/icon/ML.jpg' %}" alt="Test" width="150px" height="150px">
+          <h4 class="service-heading">Machine/Deep Learning</h4>
+        </a>
+          <p class="">"Various Regression and classifications techniques that predicts continous and categorical outputs respectively. 
+            Implemented Association Rules to build recommender system. Multiple deep learning projects that involvs ANNs, CNNs, RNNs and OpenCV." </p>
+        </div>
+        <div class="col-sm-4">
+          <a href="" onclick="return false;">
+          <img src="{% static 'img/icon/bd.png' %}" alt="Test" width="150px" height="150px">
+          <h4 class="service-heading">Big Data</h4>
+          </a>
+          <p class="">"Knowledge of Database Developnment and Data Management Systems (DBMS). Hands on experience on ETL, Data Warehousing and Data Lakes with oracle and talend.
+            Good knowledge of big data processing frameworks such as Hadoop and Spark." </p>
+        </div>
+        <div class="col-sm-4">
+          <a href="" onclick="return false;">
+          <img src="{% static 'img/icon/software.jpg' %}" alt="Test" width="150px" height="150px">
+          <h4 class="service-heading">Web Developnment</h4>
+          </a>
+          <p class="">"2+ years of experience as web developer. Have created multiple web applications using frameworks such as ASP.NET, Django and Flask. 
+            Various real life apps built with Javascript, C# and python. Good knowledge of Java and C++."
+          </p>
+        
+      </div>
+      <div class="col-sm-4">
+        <a href="{%url 'music'%}">
+        <img src="{% static 'img/icon/music.jpg' %}" alt="Test" width="150px" height="150px">
+        <h4 class="service-heading">Music</h4>
+      </a>
+        <p class="">"Raper, Performer, Songwriter and Composer. Have won multiple talent show awards as well as performed in various big events. 
+          Have small but growing fanbase with approximately 15k views in YouTube."
+        </p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <div class="container">
+  <div class="row">
+
+    <!-- Content Column -->
+    <div class="col mb-4">
+
+      <!-- Project Card Example -->
+      <div class="card shadow mb-4">
+        <div class="card-header py-3">
+          <h3 class="" style="text-align: center; color: black;">Skills</h3>
+        </div>
+        <div class="card-body">
+          <h4 class="small font-weight-bold">Data Analysis <p class="float-right">85%</p></h4>
+          <div class="progress mb-4">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <h4 class="small font-weight-bold">Machine/Deep Learning <p class="float-right">65%</p></h4>
+          <div class="progress mb-4">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 65%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <h4 class="small font-weight-bold">Programming <p class="float-right">75%</p></h4>
+          <div class="progress mb-4">
+            <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <h4 class="small font-weight-bold">Leadership <p class="float-right">80%</p></h4>
+          <div class="progress mb-4">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <h4 class="small font-weight-bold">Problem Solving <p class="float-right">80%</p></h4>
+          <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Grid 
+  <section class="bg-light page-section" id="portfolio">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Portfolio</h2>
+          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+      </div>
+      <div class="row">
+        {% for work in works.all %}
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="{%url 'detail' work.id %}">
+            <div class="portfolio-hover">
+            </div>
+            <img class="card-img-top" src="{{work.image.url}}" height="250">
+          </a>
+          <div class="portfolio-caption">
+            <h4>{{ work.title }}</h4>
+            <p class="card-text">{{ work.summary }}</p>
+          </div>
+        </a>
+        </div>
+        {% endfor %}
+        
+      </div>
+    </div>
+  </section>
+-->
+   <!-- Portfolio-->
+   <div class="container">
+   <div class="col-lg-12 text-center">
+    <h3 class="section-heading text-uppercase">Portfolio</h3>
+    <h6 class="section-subheading text-muted">Projects on Data Science, Machine Learning, Deeplearning and Web Applications</h6>
+  </div>
+  <br>
+
+   <div id="portfolio">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="#">
+                    <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/1.jpg' %}" alt="" />
+                    <div class="portfolio-box-caption">
+                        <div class="project-name">Exploratory Data Analysis (EDA)</div>
+                        <div class="project-category text-white-50">On password Dataset to explore the hidden patterns and to study the nature of datapoints.</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="https://github.com/peak27/MLR-with-SAS-Tableau">
+                    <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/2.jpg' %}" alt="" />
+                    <div class="portfolio-box-caption">
+                        <div class="project-name">Multiple Linear Regression</div>
+                        <div class="project-category text-white-50">To predict the price of diamonds based on real world data of diamonds.</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="https://github.com/peak27/Ham-or-Spam">
+                    <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/3.jpg' %}" alt="" />
+                    <div class="portfolio-box-caption">
+                        <div class="project-name">Random Forest Vs. Naive Bayes Vs. RNNs Classifier.</div>
+                        <div class="project-category text-white-50">On the bag of words model to classify real email or spam.</div>
+                        
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="https://github.com/peak27/Resume-Extractor">
+                    <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/4.jpg' %}" alt="" />
+                    <div class="portfolio-box-caption">
+                        <div class="project-name">Resume Filter with NLP</div>
+                        <div class="project-category text-white-50">Compares .pdf resume and job discription (Web Scrapping) to find the right match.</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="https://github.com/peak27/CNN-Image-Classifier-Tensorflow-Keras-">
+                    <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/5.jpg' %}" alt="" />
+                    <div class="portfolio-box-caption">
+                        <div class="project-name">Image classifier with CNNs and OpenCV</div>
+                        <div class="project-category text-white-50">That detects real life pets like dog and cats.</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="https://github.com/peak27/BigHits-Movie-Rentals-Web-Application-">
+                    <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/6.jpg' %}" alt="" />
+                    <div class="portfolio-box-caption p-3">
+                        <div class="project-name">Big Hits. (Full featured E-Commerce Website)</div>
+                        <div class="project-category text-white-50">User can create their own account and can purchase items.</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="text-center">
+  <a class="btn btn-success btn-xl text-uppercase js-scroll-trigger " href="{% url 'Projects' %}">More Projects</a>
+</div>
+</div>
+
+
+
+  <!-- About -->
+  <section class="page-section" id="work">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h3 class="section-heading text-uppercase">Work Experience</h3>
+          <h3 class="section-subheading text-muted">My professional journey.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="{% static 'img/about/2.png'%}" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Web Developer/Analyst</h4>
+                  <h5 class="subheading">IT Solutions, MNSU</h5>
+                </div>
+                <br>
+                <div class="timeline-body">
+                  <ul>
+                    <li>Consistently created well-designed, tested code using best practices for website development, including mobile and responsive site design.</li> <br>
+                    <li>Created websites and user interfaces, using standard HTML/CSS practices, while incorporating data from back-end databases and services.</li><br>
+                    <li>Created and maintained workflows with teams to provide visibility and to ensure workload balance for consistent visual designs.</li><br>
+                    <li> HTML 5, CSS, PHP, JavaScript, WordPress, EpiServer, .NET.</li><br>
+                  </ul>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="{% static 'img/about/3.jpg' %}" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Wireless Sales Associate/Mobile Expert</h4>
+                  <h5 class="subheading">Marketsource</h5>
+                </div>
+                <br>
+                <div class="timeline-body">
+                  <ul>
+                    <li>Activation of latest cellular devices for Verizon, AT&T, Sprint and more.</li><br>
+                    <li>Implemented new system for creating Gmail, iCloud, and Microsoft accounts for customers switching mobile operating systems.</li><br>
+                    <li>Technical support for smartphones, computers and other electronic devices issues.</li><br>
+                    <li>  Educating the customers on the cell phones and plans to help them make a decision of purchase based on the individual, and showing them how to utilize their new cell phones.</li><br>
+                    <li>Performed administrative tasks such as replenishment of product on sales floor, inventory, answering multiple phone lines, filing paperwork, and maintaining a clean environment.</li><br>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="{% static 'img/about/4.jpg' %}" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>CNC Machinist/Designer</h4>
+                  <h4 class="subheading">Sea Escape Jewelry</h4>
+                </div>
+                <br>
+                <div class="col-md-12" style="text-align: left;">
+                  <ul>
+                    <li>Operated CNC laser engraving and cutting machine.</li> <br>
+                    <li>Set up machine parameter and proper fixture based on material type.</li><br>
+                    <li>Created and maintained workflows with teams to provide visibility and to ensure workload balance for consistent visual designs.</li><br>
+                    <li>Laser cut files using CAD (Ez Cad2), CorelDRAW, Illustrator, etc.</li><br>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>The Story
+                  <br>Goes
+                  <br>On!</h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Portfolio
+   <div class="col-lg-12 text-center">
+    <h2 class="section-heading text-uppercase">Portfolio</h2>
+    <h3 class="section-subheading text-muted">Projects on Data Science, Machine Learning, Deeplearning and Web Applications</h3>
+  </div>
+
+  
+   <div id="portfolio">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+          {% for work in works.all %}
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{%url 'detail' work.id %}">
+                  <img class="card-img-top" src="{{work.image.url}}" height="250">
+                    <div class="portfolio-box-caption">
+                        <div class="project-name">{{ work.title }}</div>
+                        <div class="project-category text-white-50">{{ work.summary }}</div>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+  </div>-->
+  
+
+ 
+
+  <!-- Contact -->
+  <section class="page-section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Contact Me</h2>
+          <h3 style="color: red;" class="section-subheading ">"Feel free to reach out to me."</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <div class="row">
+              <div class="col-md-6">
+                <div>
+                  <p style="color: white; font-size:larger; padding-left: 13px;">
+                  <i class="fa fa-envelope" style="color: white; font-size: x-large;"></i>
+                  Email: <a href="mailto:prashant.karki-1@mnsu.edu">prashant.karki-1@mnsu.edu</a>.<br></p>
+                </div>
+
+                <div>
+                  <p style="color: white; font-size:larger; padding-left: 13px;">
+                  <i class="fa fa-phone" style="color: white; font-size: x-large;"></i>
+                  Phone: <a href="tel:507-351-6631">507-351-6631</a></span>
+                </div>
+
+                <div>
+                  <p style="color: white; font-size:larger; padding-left: 13px;">
+                  <i class="fab fa-github" style="color: white; font-size: x-large;"></i>
+                  Github: <a href="https://github.com/peak27">Peak27</a></p>
+                </div>
+
+                <div>
+                  <p style="color: white; font-size:larger; padding-left: 13px;">
+                  <i class="fab fa-linkedin-in" style="color: white; font-size: x-large;"></i>
+                  LinkedIn: <a href="https://www.linkedin.com/in/prashantkarki/">Prashant Karki</a></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input class="form-control" id="text" type="text" placeholder="Type your message here." required="required" data-validation-required-message="Type your message here.">
+                  <p class="help-block text-danger"></p>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Hire Me</button>
+                </div>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% endblock %}
+
+  

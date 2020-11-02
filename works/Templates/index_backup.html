@@ -1,0 +1,408 @@
+{% extends 'works/main.html%}
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Prashant's Profile</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="{% static 'vendor/fontawesome-free/css/all.min.css'%}" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/agency.min.css'%}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Prashant</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto" >
+          <li class="nav-item" >
+            <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#fields">Fields</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#work">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">A complete Portfolio. That defines me and my work.</div>
+        <div class="intro-heading text-uppercase">Prashant Karki</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">More About Me</a>
+      </div>
+    </div>
+  </header>
+
+   <!-- Team -->
+   <section class="bg-light page-section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">About Me.</h2>
+          <h3 class="section-subheading text-muted">"Ready To Get Hired."</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="{% static 'img/team/pk.jpg' %}" alt="">
+            <h4>Prashant Karki</h4>
+            <p class="text-muted">Data Science</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://github.com/peak27?tab=repositories">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/prashant.karki27/">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/prashantkarki/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>  
+          </div>
+        </div>
+        <div class="col-lg-8 mx-auto text-center">
+          <b>
+          <p style = "font-family:Lucida Bright,arial,helvetica;">Graduating this Dec 2020 from Minnesota State University, Mankato with Computer Information Technology (CIT) major and Statistics (Minor) with more than a year and a half of experience as Student Web Developer/Analyst at IT Solutions,MNSU.</p>
+          <p style = "font-family:Lucida Bright,arial,helvetica;">I am looking for a career in Data Science/Machine Learning field, and hope to have a challenging opportunity that utilizes the strong skill-sets that I have developed over the years throughout my academic journey, here at MNSU.</p>
+          <p style = "font-family:Lucida Bright,arial,helvetica;">I have strong analytical and statistical skills, also have completed numerous data science projects with hands on experience on Python, R, SAS, MATLAB, SQL (T/PL), Tableau and Power BI.
+            Some major topics of interest - Data Warehousing, Big Data, Cloud Computing and Neural Networks.</p></b>
+            <br>
+            <button type="button" class="btn btn-success"><a href="{% static 'img/Docs/Resumed.pdf' %}">My Resume</a></button>
+        </div>
+      </div>
+ <!--       
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="page-section" id="fields">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Major Fields of Interests</h2>
+          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <img src="{% static 'img/icon/DS.png' %}" alt="Test" width="200px" height="200px">
+          <h4 class="service-heading">Data Science</h4>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        </div>
+        <div class="col-sm-4">
+          <img src="{% static 'img/icon/ML.jpg' %}" alt="Test" width="200px" height="200px">
+          <h4 class="service-heading">Machine/Deep Learning</h4>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        </div>
+        <div class="col-sm-4">
+          <img src="{% static 'img/icon/software.jpg' %}" alt="Test" width="200px" height="200px">
+          <h4 class="service-heading">Software</h4>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        </div>
+        <div class="col-sm-4">
+          <img src="{% static 'img/icon/web.jpg' %}" alt="Test" width="200px" height="200px">
+          <h4 class="service-heading">Web Apps</h4>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        
+      </div>
+      <div class="col-sm-4">
+        <img src="{% static 'img/icon/music.jpg' %}" alt="Test" width="200px" height="200px">
+        <h4 class="service-heading">Music</h4>
+        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="bg-light page-section" id="portfolio">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Portfolio</h2>
+          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+      </div>
+      <div class="row">
+        {% for work in works.all %}
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="{%url 'detail' work.id %}">
+            <div class="portfolio-hover">
+            </div>
+            <img class="card-img-top" src="{{work.image.url}}" height="250">
+          </a>
+          <div class="portfolio-caption">
+            <h4>{{ work.title }}</h4>
+            <p class="card-text">{{ work.summary }}</p>
+          </div>
+        </a>
+        </div>
+        {% endfor %}
+        
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About -->
+  <section class="page-section" id="work">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">School/Work</h2>
+          <h3 class="section-subheading text-muted">My academic and professional journey.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="{% static 'img/about/1.jpg' %}" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>2016-2020</h4>
+                  <h4 class="subheading">Minnesota State University, Mankato</h4>
+                </div>
+                <br>
+                <div class="timeline-body">
+                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="{% static 'img/about/2.png'%}" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Web Developer/Analyst</h4>
+                  <h5 class="subheading">IT Solutions, MNSU</h5>
+                </div>
+                <br>
+                <div class="timeline-body">
+                  <ul>
+                    <li>Consistently created well-designed, tested code using best practices for website development, including mobile and responsive site design.</li> <br>
+                    <li>Created websites and user interfaces, using standard HTML/CSS practices, while incorporating data from back-end databases and services.</li><br>
+                    <li>Created and maintained workflows with teams to provide visibility and to ensure workload balance for consistent visual designs.</li><br>
+                    <li> HTML 5, CSS, PHP, JavaScript, WordPress, EpiServer, .NET.</li><br>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="{% static 'img/about/3.jpg' %}" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Wireless Sales Associate/Mobile Expert</h4>
+                  <h5 class="subheading">Marketsource</h5>
+                </div>
+                <br>
+                <div class="col-md-12" style="text-align: left;">
+                  <ul>
+                    <li>Activation of latest cellular devices for Verizon, AT&T, Sprint and more.</li><br>
+                    <li>Implemented new system for creating Gmail, iCloud, and Microsoft accounts for customers switching mobile operating systems.</li><br>
+                    <li>Technical support for smartphones, computers and other electronic devices issues.</li><br>
+                    <li>  Educating the customers on the cell phones and plans to help them make a decision of purchase based on the individual, and showing them how to utilize their new cell phones.</li><br>
+                    <li>Performed administrative tasks such as replenishment of product on sales floor, inventory, answering multiple phone lines, filing paperwork, and maintaining a clean environment.</li><br>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="{% static 'img/about/4.jpg' %}" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>CNC Machinist/Designer</h4>
+                  <h4 class="subheading">Sea Escape Jewelry</h4>
+                </div>
+                <div class="timeline-body">
+                  <br>
+                  <ul>
+                    <li>Operated CNC laser engraving and cutting machine.</li> <br>
+                    <li>Set up machine parameter and proper fixture based on material type.</li><br>
+                    <li>Created and maintained workflows with teams to provide visibility and to ensure workload balance for consistent visual designs.</li><br>
+                    <li>Laser cut files using CAD (Ez Cad2), CorelDRAW, Illustrator, etc.</li><br>
+                  </ul>
+                 </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>The Story
+                  <br>Goes
+                  <br>On!</h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <!-- Contact -->
+  <section class="page-section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Contact Me</h2>
+          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <div class="row">
+              <div class="col-md-6">
+                <div>
+                  <i class="fa fa-envelope" style="color: white; font-size: x-large;"></i>
+                  <span style="color: white; font-size:x-large; padding-left: 13px;">Email: <a href="mailto:prashant.karki-1@mnsu.edu">prashant.karki-1@mnsu.edu</a>.<br></span>
+                </div>
+
+                <div>
+                  <i class="fa fa-phone" style="color: white; font-size: x-large;"></i>
+                  <span style="color: white; font-size: x-large; padding-left: 13px;">Phone: <a href="tel:507-351-6631">507-351-6631</a></span>
+                </div>
+
+                <div>
+                  <i class="fab fa-github" style="color: white; font-size: x-large;"></i>
+                  <span style="color: white; font-size: x-large; padding-left: 13px;">Github: <a href="#">Peak27</a></span>
+                </div>
+
+                <div>
+                  <i class="fab fa-linkedin-in" style="color: white; font-size: x-large;"></i>
+                  <span style="color: white; font-size: x-large; padding-left: 13px; ">LinkedIn: <a href="#">Prashant Karki</a></span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input class="form-control" id="text" type="text" placeholder="Type your message here." required="required" data-validation-required-message="Type your message here.">
+                  <p class="help-block text-danger"></p>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Hire Me</button>
+                </div>
+              </div>
+              
+             
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <span class="copyright">Copyright &copy; Prashant Karki 2019</span>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">
+            <li class="list-inline-item">
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">Terms of Use</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+   
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="{% static 'js/jqBootstrapValidation.js'%}"></script>
+  <script src="{% static 'js/contact_me.js' %}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static 'js/agency.min.js' %}"></script>
+
+</body>
+
+</html>

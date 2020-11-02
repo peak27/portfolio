@@ -1,0 +1,174 @@
+
+  {% extends 'works/base.html'%}
+
+  {% load static %}
+
+  {% block content %}
+  <!-- Header -->
+  <header class="mlmasthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">Projects</div>
+        <div>
+        <span class="intro-heading text-uppercase"></span>
+    </div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#portfolio">Explore</a>
+      </div>
+    </div>
+  </header>
+
+  <br>
+  <br>
+  <br>
+<!-- Portfolio Grid - DSS-->
+<section class="page-section bg-light" id="portfolio">
+  <div class="container">
+      <div class="text-center">
+        <h3 class="section-heading text-uppercase">Expoloratory Data Analysis (EDA)</h3>
+        <h6 class="section-subheading text-muted">Visualizations and statistical analysis to find hidden patterns and to study the nature of data.</h6>
+      </div>
+      <br>
+      <div class="row">
+          <div class="col-lg-4 col-sm-6 mb-4">
+              <div class="portfolio-item">
+                  <a class="portfolio-link"  href="{{work.git}}">
+                    <iframe src="https://mnscu-my.sharepoint.com/personal/gm3372pm_go_minnstate_edu/_layouts/15/Doc.aspx?sourcedoc={4ab531e1-ff6a-4b28-88ba-61d90e94eda6}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="350px" height="221px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>    
+                  <div class="portfolio-caption">
+                     <a href="{{work.git}}"> <h5 class="portfolio-caption-heading">Analysing Passwords</h5></a>
+                      <p class="portfolio-caption-subheading text-muted" style="font-size: small;">"Exploring password dataset."</p>
+                  </div>
+              </div>
+          </div>
+
+          {% for work in dss %}
+          <div class="col-lg-4 col-sm-6 mb-4">
+              <div class="portfolio-item">
+                  <a class="portfolio-link"  href="{{work.git}}">
+                      <div class="portfolio-hover">
+                          <div class="portfolio-hover-content"><i class="fab fa-github" style="font-size: 100px; margin-bottom: 100px;"></i></div>
+                      </div>
+                      <img class="img-fluid" src="{{work.image.url}}" alt="" />
+                  </a>
+                  <div class="portfolio-caption">
+                    <a href="{{work.git}}"><h5 class="portfolio-caption-heading">{{ work.title }}</h5></a>
+                      <p class="portfolio-caption-subheading text-muted" style="font-size: small;">"{{ work.summary }}"</p>
+                  </div>
+              </div>
+          </div>
+          {% endfor %}
+      </div>
+      <br>
+      <div class="text-center">
+        <h3 class="section-heading text-uppercase">Natural Language Processing (NLP)</h3>
+        <h6 class="section-subheading text-muted">Natural Language Processing on realworld text datasets.</h6>
+      </div>
+      <br>
+      <div class="row">
+        {% for work in ta %}
+          <div class="col-lg-4 col-sm-6 mb-4">
+              <div class="portfolio-item">
+                  <a class="portfolio-link"  href="{{work.git}}">
+                      <div class="portfolio-hover">
+                          <div class="portfolio-hover-content"><i class="fab fa-github" style="font-size: 100px; margin-bottom: 100px;"></i></div>
+                      </div>
+                      <img class="img-fluid" src="{{work.image.url}}" alt="" />
+                  </a>
+                  <div class="portfolio-caption">
+                    <a href="{{work.git}}"><h5 class="portfolio-caption-heading">{{ work.title }}</h5></a>
+                      <p class="portfolio-caption-subheading text-muted" style="font-size: small;">"{{ work.summary }}"</p>
+                  </div>
+              </div>
+          </div>
+          {% endfor %}
+      </div>
+      <br>
+      <div class="text-center">
+        <h3 class="section-heading text-uppercase">Machine Learning Projects</h3>
+        <h6 class="section-subheading text-muted">ML models on realworld datasets to solve real world problems.</h6>
+      </div>
+      <br>
+      <div class="row">
+        {% for work in mls %}
+          <div class="col-lg-4 col-sm-6 mb-4">
+              <div class="portfolio-item">
+                  <a class="portfolio-link"  href="{{work.git}}">
+                      <div class="portfolio-hover">
+                          <div class="portfolio-hover-content"><i class="fab fa-github" style="font-size: 100px; margin-bottom: 100px;"></i></div>
+                      </div>
+                      <img class="img-fluid" src="{{work.image.url}}" alt="" />
+                  </a>
+                  <div class="portfolio-caption">
+                      <a href="{{work.git}}"><h5 class="portfolio-caption-heading">{{ work.title }}</h5></a>
+                      <p class="portfolio-caption-subheading text-muted" style="font-size: small;">"{{ work.summary }}"</p>
+                  </div>
+              </div>
+          </div>
+          {% endfor %}
+      </div>
+      <br>
+      <div class="text-center">
+        <h3 class="section-heading text-uppercase">Deep Learning Projects</h3>
+        <h6 class="section-subheading text-muted">DL models on realworld datasets to solve real world problems.</h6>
+      </div>
+      <br>
+      <div class="row">
+        {% for work in dls %}
+          <div class="col-lg-4 col-sm-6 mb-4">
+              <div class="portfolio-item">
+                  <a class="portfolio-link"  href="{{work.git}}">
+                      <div class="portfolio-hover">
+                          <div class="portfolio-hover-content"><i class="fab fa-github" style="font-size: 100px; margin-bottom: 100px;"></i></div>
+                      </div>
+                      <img class="img-fluid" src="{{work.image.url}}" alt="" />
+                  </a>
+                  <div class="portfolio-caption">
+                      <a href="{{work.git}}"><h5 class="portfolio-caption-heading">{{ work.title }}</h5></a>
+                      <p class="portfolio-caption-subheading text-muted" style="font-size: small;">"{{ work.summary }}"</p>
+                  </div>
+              </div>
+          </div>
+          {% endfor %}
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="portfolio-item">
+                <a class="portfolio-link"  href="{{work.git}}">
+                    
+                    <iframe src="https://mnscu-my.sharepoint.com/personal/gm3372pm_go_minnstate_edu/_layouts/15/Doc.aspx?sourcedoc={ed670efa-ced1-48c7-b445-a4aff242cb0d}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="350px" height="221px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+                </a>
+                <div class="portfolio-caption">
+                    <a href="https://github.com/peak27/Ham-or-Spam"><h5 class="portfolio-caption-heading">Ham or Spam</h5></a>
+                    <p class="portfolio-caption-subheading text-muted" style="font-size: small;">"Comparing various classifier to detect spam emails."</p>
+                </div>
+            </div>
+        </div>
+      </div>
+      <br>
+      <div class="text-center">
+        <h3 class="section-heading text-uppercase">Full Stack/Development</h3>
+        <h6 class="section-subheading text-muted">Various websites including e-commerce, multiple applications using .Net, JS, Python, Tkinter and more.</h6>
+      </div>
+      <br>
+      <div class="row">
+        {% for work in devs %}
+          <div class="col-lg-4 col-sm-6 mb-4">
+              <div class="portfolio-item">
+                  <a class="portfolio-link"  href="{{work.git}}">
+                      <div class="portfolio-hover">
+                          <div class="portfolio-hover-content"><i class="fab fa-github" style="font-size: 100px; margin-bottom: 100px;"></i></div>
+                      </div>
+                      <img class="img-fluid" src="{{work.image.url}}" alt="" />
+                  </a>
+                  <div class="portfolio-caption">
+                    <a href="{{work.git}}"><h5 class="portfolio-caption-heading">{{ work.title }}</h5></a>
+                      <p class="portfolio-caption-subheading text-muted" style="font-size: small;">"{{ work.summary }}"</p>
+                  </div>
+              </div>
+          </div>
+          {% endfor %}
+      </div>
+  </div>
+</section>
+
+
+
+
+  {% endblock %}
